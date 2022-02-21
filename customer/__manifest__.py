@@ -1,21 +1,35 @@
-from email.mime import application
-from msilib import sequence
-from unicodedata import category
-
-
+# -*- coding: utf-8 -*-
 {
-    'name': "Customers",
-    'version':"15.0.0.1",
-    'category':"Extra Tools",
-    'summary': "Customer Differentiation modules",
-    'sequence': 1,
-    'author': "Anish Shrestha",
-    'maintainer': "Anish Shrestha",
-    'website': "anishshrestha.dev",
-    'depends': [],
-    'demo': [],
-    'data':[],
-    'installabe':True,
-    'application':True,
-    'auto_install':False
+    'name': "Customer",
+
+    'summary': """
+        Database for customer""",
+
+    'description': """
+        Long description of module's purpose
+    """,
+
+    'author': "Anish",
+    'website': "",
+
+    # Categories can be used to filter modules in modules listing
+    # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
+    # for the full list
+    'category': 'Field Service',
+    'version': '0.1',
+
+    # any module necessary for this one to work correctly
+    'depends': ['base','mail'],
+    'license': 'LGPL-3',
+
+    # always loaded
+    'data': [
+        
+    ],
+    # only loaded in demonstration mode
+    'demo': [
+        
+    ],
+    'application': True,
+    'installable': True,
 }
